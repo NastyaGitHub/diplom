@@ -50,7 +50,7 @@ body {
   z-index: -1;
 }
 .menu, .logotip {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -556,6 +556,35 @@ a {
   font-size: 12px;
   color: #999999;
 }
+@media (min-width: 769) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .trend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media (max-width: 768px) {
   .menu {
     display: flex;
@@ -576,6 +605,13 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 360px) {
@@ -599,49 +635,12 @@ a {
     flex-wrap: wrap;
     width: 100%;
   }
-}
-@media (min-width: 360px) (max-width: 768px) {
-  .menu {
+  .footer {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-  }
-  .trend {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .article {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-  .product {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 1599px) {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .trend {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  .article {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-  .product {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 }
   .usual {
