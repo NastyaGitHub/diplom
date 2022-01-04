@@ -557,7 +557,7 @@ a {
   color: #999999;
 }
 @media (max-width: 768px) {
-  .header {
+  .header-wrapper {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
